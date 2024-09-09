@@ -25,9 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
   List topRatedMovies = [];
   List tvShows = [];
 
-  String apiKey = '9263f74af1ae35ef5f395a1fc9427f29';
+  String apiKey = PASTE API KEY HERE;
   String accessToken =
-      'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MjYzZjc0YWYxYWUzNWVmNWYzOTVhMWZjOTQyN2YyOSIsIm5iZiI6MTcyNTgxMzMyMC4zMDE0MDUsInN1YiI6IjY2ZGRkMDBhNDlmYjQyZWFmNDM4YmZlOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.XVQgoRQj4SebDdi5RbZkiO98RIkrn-dEKkHXMSPPW5M';
+      PASTE ACCESS TOKEN HERE;
   loadMovies() async {
     TMDB tmdbWithCustomLogs = TMDB(ApiKeys(apiKey, accessToken),
         logConfig: ConfigLogger(showLogs: true, showErrorLogs: true));
